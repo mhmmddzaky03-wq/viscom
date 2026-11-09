@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="BUNGKOK - Teman kebiasaan dudukmu. Pantau postur, ingat jeda, lacak kebiasaan." />
+    <title>BUNGKOK - Posture Tracker</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Cinzel:wght@600;700;800&family=Cinzel+Decorative:wght@700;900&family=Syne:wght@700;800&family=Alex+Brush&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CDN for instant load with zero build delay -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                pink: '#ff4d8d',
+                'pink-hover': '#e63977',
+                'pink-light': '#fff0f5',
+                sky: '#e9f5fc',
+                'sky-card': '#e0f2fe',
+                'sky-accent': '#38bdf8',
+                blue: '#0284c7',
+                dark: '#1e293b',
+                navy: '#0f172a',
+                muted: '#64748b',
+                bg: '#eef7fc',
+                success: '#16a34a',
+                'success-bg': '#eafaf1',
+              },
+            },
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+              serif: ['"Playfair Display"', 'Georgia', 'serif'],
+              display: ['"Cinzel Decorative"', '"Cinzel"', '"Syne"', 'serif'],
+              syne: ['"Syne"', 'sans-serif'],
+              script: ['"Alex Brush"', 'cursive'],
+            },
+            borderRadius: {
+              'sm': '8px',
+              DEFAULT: '12px',
+              'md': '14px',
+              'lg': '18px',
+              'xl': '22px',
+              '2xl': '28px',
+              '3xl': '34px',
+            },
+            boxShadow: {
+              'card': '0 4px 20px -2px rgba(15, 23, 42, 0.05)',
+              'card-hover': '0 10px 25px -4px rgba(15, 23, 42, 0.08)',
+              'pink': '0 4px 14px 0 rgba(255, 77, 141, 0.35)',
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-[#eef7fc] text-[#1e293b] antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
